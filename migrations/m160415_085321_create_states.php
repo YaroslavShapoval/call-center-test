@@ -4,7 +4,7 @@ use yii\db\Migration;
 
 class m160415_085321_create_states extends Migration
 {
-    private $tableName = '{{states}}';
+    private $tableName = '{{%states}}';
 
     public function up()
     {

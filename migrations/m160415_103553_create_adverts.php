@@ -4,7 +4,7 @@ use yii\db\Migration;
 
 class m160415_103553_create_adverts extends Migration
 {
-    private $tableName = 'adverts';
+    private $tableName = '{{%adverts}}';
 
     public function up()
     {

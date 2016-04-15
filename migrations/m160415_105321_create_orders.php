@@ -4,7 +4,7 @@ use yii\db\Migration;
 
 class m160415_105321_create_orders extends Migration
 {
-    private $tableName = '{{orders}}';
+    private $tableName = '{{%orders}}';
 
     public function up()
     {
