@@ -51,6 +51,11 @@ class OrdersController extends Controller
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+            'pagination' => [
+                'defaultPageSize' => 2,
+                'pageParam' => 'page',
+                'forcePageParam' => false,
+            ],
         ]);
     }
 
