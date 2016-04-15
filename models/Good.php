@@ -45,10 +45,10 @@ class Good extends ActiveRecord
     public function attributeLabels()
     {
         return [
-            'good_id' => 'Good ID',
-            'good_name' => 'Good Name',
-            'good_price' => 'Good Price',
-            'good_advert' => 'Good Advert',
+            'good_id' => 'ID товара',
+            'good_name' => 'Название',
+            'good_price' => 'Цена',
+            'good_advert' => 'Рекламодатель',
         ];
     }
 

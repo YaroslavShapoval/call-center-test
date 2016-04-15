@@ -13,6 +13,9 @@ use yii\db\ActiveRecord;
  * @property string $user_last_name
  * @property string $user_login
  * @property string $user_password
+ *
+ * @property string $name
+ * @property string $fullName
  */
 class Advert extends ActiveRecord
 {
@@ -48,5 +51,15 @@ class Advert extends ActiveRecord
             'user_login' => 'User Login',
             'user_password' => 'User Password',
         ];
+    }
+
+    public function getName()
+    {
+        return $this->user_first_name . ' ' . $this->user_last_name;
+    }
+
+    public function getFullName()
+    {
+        return $this->user_first_name . ' ' . $this->user_last_name . ' / ' . $this->user_login;
     }
 }

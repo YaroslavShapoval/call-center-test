@@ -5,6 +5,7 @@ $params = require(__DIR__ . '/params.php');
 $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
+    'defaultRoute' => 'goods/index',
     'bootstrap' => ['log'],
     'components' => [
         'request' => [
@@ -41,6 +42,7 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'goods/<id:\d+>' => 'goods/update',
             ],
         ],
     ],
