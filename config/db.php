@@ -1,9 +1,7 @@
 <?php
 
-return [
-    'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
-    'username' => 'root',
-    'password' => '',
-    'charset' => 'utf8',
-];
+if (YII_ENV_DEV && file_exists('db-dev.php')) {
+    return require 'db-dev.php';
+} else {
+    return require 'db-prod.php';
+}
