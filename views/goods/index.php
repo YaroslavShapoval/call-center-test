@@ -29,7 +29,8 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
 
             [
-                'class' => yii\grid\SerialColumn::className(),
+                'attribute' => 'good_id',
+                'label' => '#',
             ],
 
             [
